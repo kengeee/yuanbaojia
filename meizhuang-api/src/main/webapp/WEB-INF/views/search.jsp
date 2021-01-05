@@ -256,7 +256,7 @@ background:#e4393c;text-align:center;font-size:1.1rem;cursor:pointer;overflow:hi
 	                </a>
 	            </td>
 	            <td class="msg">
-	            <c:forEach var="product" items="${group.productList}">                            
+	            <c:forEach var="product" items="${group.productList}">
 	               ${product.offerProduct}<br>
 	            </c:forEach>
 	            </td>
@@ -338,7 +338,6 @@ background:#e4393c;text-align:center;font-size:1.1rem;cursor:pointer;overflow:hi
 <script src="/static/js/keyword.js"></script>
 
 <script>
-
 window.localStorage.setItem("mSearchKey", "复原蜜");
 
 $('body').click(function () {

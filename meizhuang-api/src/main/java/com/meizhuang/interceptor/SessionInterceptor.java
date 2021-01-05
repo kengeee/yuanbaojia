@@ -105,8 +105,8 @@ public class SessionInterceptor implements HandlerInterceptor {
 		
 		Object getHomeDomain = request.getSession().getAttribute("HOME_DOMAIN_NAME");
 		if(getHomeDomain == null){
-			String homeDomain = SystemParameterUtils.get(SystemParameterEnum.HOME_DOMAIN_NAME);
-//			String homeDomain = "http://0.0.0.0:8588";
+//			String homeDomain = SystemParameterUtils.get(SystemParameterEnum.HOME_DOMAIN_NAME);
+			String homeDomain = "http://127.0.0.1:8588";
 			request.getSession().setAttribute("HOME_DOMAIN_NAME", homeDomain);
 		}
 		
